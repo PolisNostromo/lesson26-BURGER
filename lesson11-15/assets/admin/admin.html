@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online-shop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper admin-panel">
+        <h2>Панель администратора</h2>
+        <a href="../../app.html" style="text-align:center; margin-top:20px" class="btn orange">Перейти на сайт</a>
+        <div class="panel-add links">
+            <h3>Добавление ссылок</h3>
+            <div class="container">
+                <input type="text" placeholder="Введите текст ссылки">
+                <input type="button" value="Добавить" class="btn orange" onclick="addLink(this)">
+            </div>
+            <div class="links-container">
+
+            </div>
+        </div>
+        <div class="panel-add title">
+            <h3>Изменение заголовка</h3>
+            <div class="container">
+                <h4>Тест</h4>
+                <input type="text" placeholder="Введите новый заголовок">
+                <input type="button" value="Редактировать" class="btn orange edit" onclick="editTitle(this)">
+                <input type="button" value="Сохранить" class="btn orange save" onclick="saveTitle(this)">
+            </div>
+        </div>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

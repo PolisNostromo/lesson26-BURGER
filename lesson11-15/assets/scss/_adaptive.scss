@@ -1,0 +1,49 @@
+@media screen and (max-width:900px) {
+    .wrapper{
+        padding: 0 12px;
+    }
+    header .burger-menu{
+        display: flex;
+    }
+    .nav-links{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: $white;
+        z-index: 999;
+        display: none;
+        animation-iteration-count: 1;
+        animation-duration: 0.5s;
+        &.active{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+                animation-name: openBurger;
+            a{
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@keyframes openBurger {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes closeBurger {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}

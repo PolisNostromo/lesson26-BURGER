@@ -1,0 +1,39 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    &-container{
+        width: 30%;
+        background-color:$white;
+        border-radius: 10px;
+        padding: 25px;
+        .container{
+            @extend %container;
+        }
+        h2{
+            @include font(700);
+            font-size: 30px;
+        }
+        h3{
+            @include font(700);
+            font-size: 24px;
+            transition: 0.5s;
+            color: $black;
+            &:hover{
+                color: $orange;
+            }
+        }
+        p{
+            @include font(400);
+            text-align: justify;
+            margin: 25px 0;
+        }
+    }
+}
